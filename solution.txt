@@ -1,0 +1,16 @@
+cd G:/EPG 
+git clone https://github/s14456/epg1_git
+cd epg1_git/
+git branch hw-s14456
+git checkout rebase-me
+git rebase hw-s14456
+git checkout hw-s14456
+git merge rebase-me --ff
+git merge merge-me
+nano README.md
+git add README.md
+git commit
+nano solution.txt
+git add solution.txt
+git commit
+git push https://github.com/s14456/epg1_git hw-s14456
